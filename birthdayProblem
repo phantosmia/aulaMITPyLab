@@ -16,12 +16,12 @@ while probSharing < 0.99:
     
     
 print(count-1)
-numeroTotalDePessoas = 30   
+numeroTotalDePessoas = 250   
 n1 = 365 - numeroTotalDePessoas
 primeiroFatorial = math.factorial(365)
 segundoFatorial = math.factorial(n1)
 primeiroResultadoDivisao = primeiroFatorial / segundoFatorial
 potencia = pow(365,numeroTotalDePessoas)
 resultadoFinal = primeiroResultadoDivisao / potencia
-probSharing = 1 - resultadoFinal
+probSharing = 1.0 - resultadoFinal
 print(probSharing)
