@@ -1,0 +1,27 @@
+from __future__ import division
+import math
+probNotSharing = 0.0
+probSharing = 0.0
+count = 0
+n1 = 365
+while probSharing < 0.99:
+    count = count + 1
+    n1 = 365 - count
+    primeiroFatorial = math.factorial(365)
+    segundoFatorial = math.factorial(n1)
+    primeiroResultadoDivisao = primeiroFatorial / segundoFatorial
+    potencia = pow(365,count)
+    resultadoFinal = primeiroResultadoDivisao / potencia
+    probSharing = 1 - resultadoFinal
+    
+    
+print(count-1)
+numeroTotalDePessoas = 30   
+n1 = 365 - numeroTotalDePessoas
+primeiroFatorial = math.factorial(365)
+segundoFatorial = math.factorial(n1)
+primeiroResultadoDivisao = primeiroFatorial / segundoFatorial
+potencia = pow(365,numeroTotalDePessoas)
+resultadoFinal = primeiroResultadoDivisao / potencia
+probSharing = 1 - resultadoFinal
+print(probSharing)
